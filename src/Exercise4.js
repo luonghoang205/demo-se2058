@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// --- PHẦN 4: KHAI BÁO CLASS (OOP) ---
+
 class Shape {
   constructor(color = "red") { this.color = color; }
   getArea() { return 0; }
@@ -28,7 +28,7 @@ class Triangle extends Shape {
 }
 
 export default function Exercise4() {
-  // Dữ liệu mẫu đề bài
+  
   const courses = ["React", "React Native", "NodeJs"];
   
   const companies = [
@@ -47,7 +47,7 @@ export default function Exercise4() {
     .filter(c => c.category === "Retail")
     .map(c => ({ ...c, start: c.start + 1 }));
 
-  // Logic Promise (Bài 5)
+  
   const [promiseResult, setPromiseResult] = useState('');
 
   const handlePromiseCheck = () => {
@@ -65,7 +65,7 @@ export default function Exercise4() {
       .catch(err => setPromiseResult(`Notice: ${err}`));
   };
 
-  // Log kết quả ES6 ra Console (Bài 1, 2, 3 ES6)
+  
   useEffect(() => {
     console.log("--- BÀI TAP ES6 ---");
     const rect = new Rectangle("blue", 10, 5);
